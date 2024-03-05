@@ -180,7 +180,7 @@ public class Runigram {
 		Color[][] blendedImage = new Color[rows][cols];
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < cols; j++){
-				blendedImage[i][j] = blend(image1[i][j], image1[i][j], alpha);
+				blendedImage[i][j] = blend(image1[i][j], image2[i][j], alpha);
 			}
 		}
 		return blendedImage;
